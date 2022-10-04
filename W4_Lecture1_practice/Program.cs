@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace W4_Lecture1_practice
 {
@@ -10,6 +12,8 @@ namespace W4_Lecture1_practice
             //Q2();
             //Q3_a();
             //Q3();
+            //Q4();
+            Q5();
         }
         #region Q1
         static void Q1()
@@ -149,7 +153,71 @@ namespace W4_Lecture1_practice
         }
         #endregion
         #region Q4
+        static void Q4()
+        {
+            Console.Write("  write a string \n");
+            string word = Console.ReadLine();
+            string compressor = Compressor(word);
+            Console.Write(compressor);
+        }
+        static string Compressor(string word)
+        {
+            int number=0;
+            char c = word[0];
+            string compressor = "";
+            for(int i =0;i<word.Length;i++)
+            {
+                if(word[i]==c)
+                {
+                    number = number + 1;
+                }
+                else
+                {
+                    compressor = compressor + c + number;
+                    number = 1;
+                    c = word[i];
 
+                }
+            }
+            compressor = compressor + c + number;
+            return compressor;
+        }
+        #endregion
+        #region Q5
+        static void Q5()
+        {
+            List<int> Amstrong = FindAmstrongNumber();
+            foreach(int a in Amstrong)
+            {
+                Console.Write(a + " ");
+            }
+            
+        }
+        static List<int> FindAmstrongNumber()
+        {
+            
+            List<int> Amstrong = new List<int>();
+            int sum = 0;
+            for(int i=0;i<=28;i++)
+            {
+                string number = Convert.ToString(i);
+                for(int j =0;j<number.Length;j++)
+                { 
+                    Console.Write(sum + " " + i + "\n");
+                    sum = Convert.ToInt32(Math.Pow(Convert.ToInt32(number[j]),3)) + sum;
+                    
+                }
+                Console.WriteLine();
+                if(sum == i)
+                {
+                    Amstrong.Add(i);
+                   
+                }
+                sum = 0;
+            }
+            return Amstrong;
+        }
+        
         #endregion
         static void Print(int[] array)
         {
