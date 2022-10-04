@@ -1,0 +1,13 @@
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\bin\Debug\netcoreapp3.1\W4_Lecture1_practice.exe
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\bin\Debug\netcoreapp3.1\W4_Lecture1_practice.deps.json
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\bin\Debug\netcoreapp3.1\W4_Lecture1_practice.runtimeconfig.json
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\bin\Debug\netcoreapp3.1\W4_Lecture1_practice.runtimeconfig.dev.json
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\bin\Debug\netcoreapp3.1\W4_Lecture1_practice.dll
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\bin\Debug\netcoreapp3.1\W4_Lecture1_practice.pdb
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\obj\Debug\netcoreapp3.1\W4_Lecture1_practice.csprojAssemblyReference.cache
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\obj\Debug\netcoreapp3.1\W4_Lecture1_practice.AssemblyInfoInputs.cache
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\obj\Debug\netcoreapp3.1\W4_Lecture1_practice.AssemblyInfo.cs
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\obj\Debug\netcoreapp3.1\W4_Lecture1_practice.csproj.CoreCompileInputs.cache
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\obj\Debug\netcoreapp3.1\W4_Lecture1_practice.dll
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\obj\Debug\netcoreapp3.1\W4_Lecture1_practice.pdb
+C:\Users\Laury\OneDrive\Documents\A3 ESILV\S5 Dublin\W4_Lecture1_practice\W4_Lecture1_practice\obj\Debug\netcoreapp3.1\W4_Lecture1_practice.genruntimeconfig.cache
