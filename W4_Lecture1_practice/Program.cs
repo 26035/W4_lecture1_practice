@@ -13,7 +13,11 @@ namespace W4_Lecture1_practice
             //Q3_a();
             //Q3();
             //Q4();
-            Q5();
+            //Q5();
+            //Q6();
+            //Q7();
+            //Q8();
+            Q9();
         }
         #region Q1
         static void Q1()
@@ -197,33 +201,157 @@ namespace W4_Lecture1_practice
         {
             
             List<int> Amstrong = new List<int>();
-            int sum = 0;
-            for(int i=0;i<=28;i++)
+            double sum = 0;
+            int division = 100;
+            int result = 0;
+            for(int i=0;i<=999;i++)
             {
                 string number = Convert.ToString(i);
-                for(int j =0;j<number.Length;j++)
-                { 
-                    Console.Write(sum + " " + i + "\n");
-                    sum = Convert.ToInt32(Math.Pow(Convert.ToInt32(number[j]),3)) + sum;
+                result = i;
+                for (int j = 2; j>=0;j--)
+                {
                     
+                    sum =Math.Pow(result/ division,3) + sum;
+                    result = result % division;
+                    division = division / 10;
+
                 }
-                Console.WriteLine();
                 if(sum == i)
                 {
                     Amstrong.Add(i);
                    
                 }
                 sum = 0;
+                division = 100;
             }
             return Amstrong;
         }
-        
+
         #endregion
+        #region Q6
+        static void Q6()
+        {
+
+            Console.WriteLine("How much number would you like to give?");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int[] array = new int[number];
+            for(int i =0;i<number;i++)
+            {
+                Console.Write("write the number");
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int numberOfDifferentNumbers = 0;
+            
+            int[,] matrice = new int[2, array.Length];
+            for(int i =0;i<999;i++)
+            {
+                int n = Counter(i, array);
+                if(n!=0)
+                {
+
+                    matrice[0, numberOfDifferentNumbers] = i;
+                    matrice[1, numberOfDifferentNumbers] = n;
+                    numberOfDifferentNumbers++;
+
+                }
+            }
+            PrintM(matrice);
+            
+
+        }
+        static int Counter(int number, int[] array)
+        {
+            int counter = 0;
+            
+                for (int i = 0; i < array.Length; i++)
+                {
+                    if (array[i] == number)
+                    {
+                        counter++;
+                    }
+                }
+            
+            return counter;
+        }
+        #endregion
+        #region Q7
+        static void Q7()
+        {
+            Console.WriteLine("give a number");
+            int number = Convert.ToInt32(Console.ReadLine());
+            if(number ==0)
+            {
+                Console.WriteLine("the factorial is 1");
+
+            }
+            else
+            {
+                int factorial = Factorial(number);
+                Console.WriteLine("the factorial is " + factorial);
+            }
+        }
+        static int Factorial(int number)
+        {
+            int factorial = 1;
+            for(int i=number; i>0;i--)
+            {
+                factorial = factorial * i;
+            }
+            return factorial;
+        }
+        #endregion
+        #region Q8
+        static void Q8()
+        {
+            Console.Write("what's the phrase?\n");
+            string phrase = Console.ReadLine();
+            int nbOfSpaces =CounterOfSpace(phrase);
+            Console.WriteLine(nbOfSpaces);
+        }
+        static int CounterOfSpace(string phrase)
+        {
+            int nbOfSpaces = 0;
+            for(int i =0;i<phrase.Length; i ++)
+            {
+                if(phrase[i]==' ')
+                {
+                    nbOfSpaces++;
+                }
+            }
+            return nbOfSpaces;
+        }
+        #endregion
+        #region Q9
+        static void Q9()
+        {
+            Console.Write("write 3 names\n");
+            Person n1 = new Person(Console.ReadLine());
+            Person n2 = new Person(Console.ReadLine());
+            Person n3 = new Person(Console.ReadLine());
+            Console.Write("n1 = " + n1 + " n2=" + n2 + " n3=" + n3);
+            n1.Name = n1.Destructor();
+            Console.WriteLine(n1.ToString());
+
+        }
+        #endregion
+        // print array
         static void Print(int[] array)
         {
            for(int i =0;i<array.Length;i++)
             {
                 Console.Write(array[i] + " ");
+            }
+        }
+        // print matrice
+        static void PrintM(int[,] mat)
+        {
+            for(int i =0;i<mat.GetLength(0);i++)
+            {
+                for(int j=0;j<mat.GetLength(1);j++)
+                {
+                    Console.Write(mat[i, j] + " ");
+                }
+                Console.WriteLine();
             }
         }
     }
